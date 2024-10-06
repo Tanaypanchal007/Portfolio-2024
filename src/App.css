@@ -1,0 +1,9 @@
+.active {
+    background: #4a90e2;
+    transition: 0.5 ease-in-out;
+    color: white;
+}
+
+.nav-link {
+    @apply font-jakartaSans text-base font-semibold px-7 rounded-full py-3;
+}

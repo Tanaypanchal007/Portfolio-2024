@@ -1,11 +1,18 @@
-import React from "react";
-import Navbar from "../components/Navbar";
+import { React, useContext } from "react";
+import { ThemeContext } from "../context/ThemeProvider";
+import HeroSection from "../components/HeroSection";
 
+HeroSection;
 const Home = () => {
+  const { mode } = useContext(ThemeContext);
+
   return (
-    <>
-      <h1 className="">I am Home page</h1>
-    </>
+    <section
+      className={`
+        mode === "light" ? "bg-light-BodyBackground" : "bg-dark-BodyBackground"  `}
+    >
+      <HeroSection />
+    </section>
   );
 };
 
